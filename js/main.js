@@ -9,7 +9,7 @@ const products = [
     {
         id: 1,
         name: "Kanha Ji Poshak",
-        price: 500.00,
+        price:500.00,
         image: "https://myladdugopal.com/wp-content/uploads/2025/11/winter-collection.png",
         category: "Laddu Gopal Dresses",
         description: "Garam Poshaak Crafted from warm wool or velvet materials to protect the deity during colder months."
@@ -17,7 +17,7 @@ const products = [
     {
         id: 2,
         name: "Laddu Gopal Dresses",
-        price: 400.00,
+        price:400.00,
         image: "https://i.etsystatic.com/28680422/r/il/c27cf4/4244260316/il_1080xN.4244260316_l9de.jpg",
         category: "Dresses",
         description: "Krishna poshak is a traditional, handcrafted outfit designed for Krishna idols"
