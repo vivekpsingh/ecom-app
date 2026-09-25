@@ -366,7 +366,7 @@ function updateCartDisplay() {
         total += item.price * item.quantity;
     });
 
-    cartTotal.textContent = `${total.toFixed(2)}`;
+    cartTotal.textContent = `Rs. ${total.toFixed(2)}`;
 }
 
 // Update Quantity
