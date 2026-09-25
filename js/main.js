@@ -238,7 +238,7 @@ function createProductCard(product) {
             <h3 class="text-xl font-semibold mb-2">${product.name}</h3>
             <p class="text-gray-600 mb-4 h-12 overflow-hidden">${product.description}</p>
             <div class="flex justify-between items-center">
-                <span class="price-tag">$${product.price.toFixed(2)}</span>
+                <span class="price-tag">${product.price.toFixed(2)}</span>
                 <button class="add-to-cart bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105"
                         data-product-id="${product.id}">
                     Add to Cart
@@ -340,7 +340,7 @@ function updateCartDisplay() {
                 <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-lg">
                 <div>
                     <h4 class="font-semibold">${item.name}</h4>
-                    <p class="text-gray-600">$${item.price.toFixed(2)} x ${item.quantity}</p>
+                    <p class="text-gray-600">${item.price.toFixed(2)} x ${item.quantity}</p>
                 </div>
             </div>
             <div class="flex items-center space-x-4">
@@ -366,7 +366,7 @@ function updateCartDisplay() {
         total += item.price * item.quantity;
     });
 
-    cartTotal.textContent = `$${total.toFixed(2)}`;
+    cartTotal.textContent = `${total.toFixed(2)}`;
 }
 
 // Update Quantity
