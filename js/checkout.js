@@ -35,10 +35,10 @@ function loadOrderSummary() {
                 <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-lg">
                 <div>
                     <h4 class="font-semibold">${item.name}</h4>
-                    <p class="text-gray-600">${item.price.toFixed(2)} x ${item.quantity}</p>
+                    <p class="text-gray-600">Rs. ${item.price.toFixed(2)} x ${item.quantity}</p>
                 </div>
             </div>
-            <span class="font-semibold">${(item.price * item.quantity).toFixed(2)}</span>
+            <span class="font-semibold">Rs. ${(item.price * item.quantity).toFixed(2)}</span>
         `;
         orderItems.appendChild(itemElement);
         subtotal += item.price * item.quantity;
@@ -47,8 +47,8 @@ function loadOrderSummary() {
     const shipping = 10; // Fixed shipping cost
     const total = subtotal + shipping;
 
-    subtotalElement.textContent = `${subtotal.toFixed(2)}`;
-    totalElement.textContent = `${total.toFixed(2)}`;
+    subtotalElement.textContent = `Rs. ${subtotal.toFixed(2)}`;
+    totalElement.textContent = `Rs. ${total.toFixed(2)}`;
 }
 
 // Setup Stripe
